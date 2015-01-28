@@ -36,10 +36,8 @@ $(function () {
                 return;
             }
             $(this).html(turn);
-            console.log($(this));
             moves += 1;
             score[turn] += $(this)[0].indicator;
-            console.log(score[turn]);
             if (win(score[turn])) {
                 alert(turn + " wins!");
                 if (turn == "X") {
